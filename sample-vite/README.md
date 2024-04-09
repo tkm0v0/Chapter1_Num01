@@ -38,3 +38,4 @@ added 2 packages, and audited 296 packages in 671ms
 found 0 vulnerabilities
 mai@takahashimainoMacBook-Pro sample-vite %                            
 ```
+- Next.jsにはデフォルトで、 `styled-jsx`が入っている

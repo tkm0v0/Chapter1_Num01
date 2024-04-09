@@ -1,5 +1,6 @@
 import './App.css'
 import { CssModules } from './components/CssModules'
+import { StyledJsx } from './components/StyledJsx'
 import { InlineStyles } from './components/lnlineStyle'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div>
           <InlineStyles />
           <CssModules />
+          <StyledJsx />
       </div>
     </>
   )
