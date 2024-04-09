@@ -1,5 +1,5 @@
 import './App.css'
-import { InlineStyles } from './lnlineStyle'
+import { InlineStyles } from './components/lnlineStyle'
 
 function App() {
   return (
