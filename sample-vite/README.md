@@ -39,3 +39,17 @@ found 0 vulnerabilities
 mai@takahashimainoMacBook-Pro sample-vite %                            
 ```
 - Next.jsにはデフォルトで、 `styled-jsx`が入っている
+
+# section4-16
+- `styled-components`をインストールする
+```
+mai@takahashimainoMacBook-Pro sample-vite % npm install styled-components
+
+added 14 packages, and audited 310 packages in 845ms
+
+109 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+mai@takahashimainoMacBook-Pro sample-vite % 
+```
