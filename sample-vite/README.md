@@ -53,3 +53,18 @@ added 14 packages, and audited 310 packages in 845ms
 found 0 vulnerabilities
 mai@takahashimainoMacBook-Pro sample-vite % 
 ```
+
+#  section4-17
+- `@emotion/styled`と`@emotion/react`をインストールする
+```
+mai@takahashimainoMacBook-Pro sample-vite % npm install @emotion/styled @emotion/react
+
+
+added 32 packages, and audited 342 packages in 2s
+
+111 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+mai@takahashimainoMacBook-Pro sample-vite % 
+```
