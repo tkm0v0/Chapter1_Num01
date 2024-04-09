@@ -25,3 +25,16 @@ mai@takahashimainoMacBook-Pro sample-vite % npx sass --version
 
 1.74.1 compiled with dart2js 3.3.3
 ```
+# section4-15
+- `styled-jsx`をインストールする
+```
+mai@takahashimainoMacBook-Pro sample-vite % npm install styled-jsx
+
+added 2 packages, and audited 296 packages in 671ms
+
+106 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+mai@takahashimainoMacBook-Pro sample-vite %                            
+```
