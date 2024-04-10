@@ -20,10 +20,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/page1" element={<Page1 />} >
-             {/* パターン1 */}
-            {/* <Route path="/page1/detailA" element={<Page1DetailA />} />
-            <Route path="/page1/detailB" element={<Page1DetailB />} /> */}
-             {/* パターン2 */}
           <Route path="detailA" element={<Page1DetailA />} />
           <Route path="detailB" element={<Page1DetailB />} />
 
