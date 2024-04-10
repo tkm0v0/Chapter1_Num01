@@ -13,14 +13,14 @@ function App() {
       <div>
         <Link to="/">Home</Link><br />
         <Link to="/page1">Page1</Link><br />
-        <Link to="/page1/detailA/:id">Page1 Detail A</Link><br />
+        <Link to="/page1/detailA">Page1 Detail A</Link><br />
         <Link to="/page1/detailB">Page1 Detail B</Link><br />
         <Link to="/page2">Page2</Link><br />
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/page1" element={<Page1 />} >
-          <Route path="detailA/:id" element={<Page1DetailA />} />
+          <Route path="detailA" element={<Page1DetailA />} />
           <Route path="detailB" element={<Page1DetailB />} />
 
         </Route>
