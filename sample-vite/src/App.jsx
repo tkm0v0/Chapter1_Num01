@@ -39,3 +39,8 @@ export default App;
 
 //、Linkコンポーネントにexactプロパティは使用されません。exactプロパティは、以前のバージョンのReact Router（特にversion 5以前）でRouteコンポーネントにおいて、パスの完全一致を指定するために使用されていました。しかし、React Router version 6ではRouteのマッチングシステムが改善され、Routesコンポーネント内のRouteが自動的に正確なマッチングを行うため、このプロパティは不要になりました。
 // そのため、Linkコンポーネントのexactプロパティは削除するのが適切です。
+
+
+
+//React Router v6 以降でロケーションやパラメータにアクセスする方法
+//useLocation フックと useParams フックを使用
