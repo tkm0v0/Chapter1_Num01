@@ -20,7 +20,7 @@ export default function App() {
           </div>
           <Switch>
               <Route exact path="/"><Home /></Route>
-              <Route path="/Page1"><Page1 /></Route>
+              <Route path="/Page1" render={()=> <Page1 /> }></Route>
               <Route path="/Page2"><Page2 /></Route>
           </Switch>
       </BrowserRouter>
