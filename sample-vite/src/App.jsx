@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter ,Link ,Switch ,Route} from 'react-router-dom';
+//BrowserRouterタグ配下で ルーティングが有効になる
+//Link = <a>タグに相当するもの
+//Switch = コンポーネントを出し分ける
+//Route = ルーティングの設定  //Switchの中で、Routeにマッチしたものを表示する
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Home } from './Home';
+import { Page1 } from './Page1';
+import { Page2 } from './Page2';
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+    return (
+      <BrowserRouter>
+          <div>
+              <Link to="/">Home</Link>
+              <br />
+              <Link to="/Page1">Page1</Link>
+              <br />
+              <Link to="/Page2">Page2</Link>
+              {/* <Home />
+              <Page1 />
+              <Page2 /> */}
+          </div>
+          <Switch>
+              <Route exact path="/"><Home /></Route>
+              <Route path="/Page1"><Page1 /></Route>
+              <Route path="/Page2"><Page2 /></Route>
+          </Switch>
+      </BrowserRouter>
+    );
 }
-
-export default App
