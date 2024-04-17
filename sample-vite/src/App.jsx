@@ -17,9 +17,6 @@ export default function App() {
               <Link to="/Page1">Page1</Link>
               <br />
               <Link to="/Page2">Page2</Link>
-              {/* <Home />
-              <Page1 />
-              <Page2 /> */}
           </div>
           <Switch>
               <Route exact path="/"><Home /></Route>
