@@ -23,8 +23,11 @@ export default function App() {
           <Switch>
               <Route exact path="/"><Home /></Route>
               <Route path="/Page1" 
-                  render={()=> (
+                //Page1 を関数に統一する → props内 matchから、path + url情報を取得する
+                render={(props)=> (
+                    //propsは、history,location,matchの情報を受け取る
                     <Switch>
+                      {console.log(props)}
                         <Route exact path="/page1">
                           <Page1 /> 
                         </Route>
