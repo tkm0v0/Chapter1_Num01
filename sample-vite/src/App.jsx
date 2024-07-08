@@ -24,17 +24,17 @@ export default function App() {
               <Route exact path="/"><Home /></Route>
               <Route path="/Page1" 
                 //Page1 を関数に統一する → props内 matchから、path + url情報を取得する
-                render={(props)=> (
-                    //propsは、history,location,matchの情報を受け取る
+                render={({match : { url }})=> (
+                    //matchからulrの情報を受け取る
                     <Switch>
-                      {console.log(props)}
-                        <Route exact path="/page1">
+                      {console.log(url)}
+                        <Route exact path={url}>
                           <Page1 /> 
                         </Route>
-                        <Route path="/page1/detailA">
+                        <Route path={`${url}/detailA`}>
                           <Page1DetailA /> 
                         </Route>
-                        <Route path="/page1/detailB">
+                        <Route path={`${url}/detailB`}>
                             <Page1DetailB /> 
                         </Route>
                     </Switch>
