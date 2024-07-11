@@ -2,13 +2,12 @@ import { useParams, useLocation  } from "react-router-dom";
 
 export const UrlParameter = () => {
     const { id } = useParams();
-    const location = useLocation();
-    console.log(location);
+    const search = useLocation();
+    console.log(search);
     return (
         <div>
             <h1>UrlParameterページです</h1>
             <p>パラメーターは{id}です</p>
-            <p>クエリパラメーターは{ location.search ? `${location.search}です` : "ありません"}</p>
         </div>
     );
 }
