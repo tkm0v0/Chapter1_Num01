@@ -1,11 +1,8 @@
 import { Switch, Route } from 'react-router-dom';
 import { Home } from '../Home';
-
-import { Page2 } from '../Page2';
-
 import { page1Routes } from './Page1Routes';
 import { page2Routes } from './Page2Routes';
-
+import { Page404 } from '../Page404';
 //exactとは?
 //<Route />にexactを記述すると、pathに指定したパス文字列と、location.pathName（windowオブジェクトのlocation.pathName）が完全一致した場合のみコンポーネントを返すようになります。
 //[React Routerのexactとは何か](https://qiita.com/gombeedoe/items/6f4ea0e37775bac01c0d)
@@ -53,7 +50,9 @@ export const Router = () => {
                     </Switch>
                 )}
             />
-            <Route path="/Page2"><Page2 /></Route>
+            <Route path="*">
+                <Page404 />
+            </Route>
         </Switch>
     );
 }
